@@ -1,0 +1,38 @@
+www.hackerrank.com (CLOJURE)
+
+(println "Hello World")
+
+(fn[n](loop [x n](when (>= x 1)(println "Hello World")(recur (- x 1)))))
+
+
+(fn[n](map #(Math/abs %) (range 0 n) ))
+ 
+
+(fn[n](map #(Math/abs %) n ))
+
+
+(fn[delim lst](filter #(> delim %) lst)) 
+
+
+(fn[lst](apply + (filter odd? lst)))
+
+
+(fn[num lst](for [x lst] (loop [y num](when (>= y 1)(println x)(recur (- y 1))))))
+
+
+(fn[lst](apply + (for [x lst]1)))
+
+(fn[lst](flatten (map rest (partition-all 2 lst))))
+
+
+(fn[lst](for [x (range 0 (count lst))](nth lst (- (- (count lst) 1) x))))
+
+
+
+
+
+/*###############################*/
+//(fn[lst](nth lst (2 3))
+//(fn[lst](doseq [item lst] (prn item) ))
+ 
+ 
